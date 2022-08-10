@@ -1,0 +1,156 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+  height: 100vh;
+  background-color: $bgColor;
+  border: 1px solid;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text {
+  width: 100%;
+  background: $bgColor;
+  z-index: 80;
+
+  .hTitle {
+    @include text($fontMain, 4.2vw, $textColor);
+    margin: 40px 0 0 -14vw;
+    padding: 4.2vw;
+    line-height: 1.4;
+    font-weight: 800;
+    background: #373b40;
+    word-break: break-word;
+    border-radius: 264px;
+  }
+
+
+  .startedContent {
+    padding-left: 8%;
+    max-width: 500px;
+
+    .description {
+      @include text($fontMain, 14px, $textColor);
+      margin: 0 0 30px;
+    }
+
+    .btnContact {
+      @include text($fontMain, 12px, $textColor);
+      text-align: center;
+      font-weight: 800;
+      padding: 0 35px;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      height: 64px;
+      line-height: 62px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: 0 0;
+      outline: none;
+      border: 1px solid #585d65;
+      cursor: pointer;
+      border-radius: 64px;
+      transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
+
+      &:hover {
+        background: $primaryColor;
+      }
+
+      .animatedBtn {
+        @include text($fontMain, 12px, $textColor);
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        span {
+          position: relative;
+          overflow: hidden;
+          display: block;
+          text-shadow: 0 16px 0 $primaryColor;
+
+          em {
+            transition-delay: .025s;
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transition: transform .3s ease;
+            -moz-transition: transform .3s ease;
+            -webkit-transition: transform .3s ease;
+            -o-transition: transform .3s ease;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    @include text($fontMain, 14px, $primaryColor);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .hTitle {
+    margin: 40px 0 0 -20vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainBlock {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: auto !important;
+    text-align: center;
+    .text {
+      width: 100%;
+
+      .hTitle {
+        font-size: 60px;
+        margin: 0 auto;
+        margin-top: -200px;
+        padding: 70px 35px 30px;
+        max-width: 100%;
+        background: $bgColor;
+        border-radius: 360px 360px 0 0;
+      }
+      @media screen and (max-width: 720px) {
+        .hTitle {
+          font-size: 48px;
+          margin-top: -140px;
+          padding: 70px 15px 15px;
+          width: auto;
+        }
+      }
+
+      .startedContent {
+        padding-left: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+
+

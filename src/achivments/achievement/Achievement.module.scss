@@ -1,0 +1,25 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.achievementBlock {
+  width: 200px;
+  margin-right: 40px;
+  background: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .item {
+    @include text($fontMain, 18px, $textColor);
+    margin: 0 0 30px;
+    font-weight: 800;
+
+    .description {
+      @include text($fontMain, 14px, $textColor);
+      font-weight: 400;
+      line-height: 1.8;
+      word-wrap: break-word;
+      padding: 0;
+      margin: 10px 0;
+    }
+  }
+}

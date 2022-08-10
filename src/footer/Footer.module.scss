@@ -1,0 +1,17 @@
+@import "../common/styles/sass/variables";
+
+.footer {
+    height:10vh;
+    background-color: $bgColor;
+    border: 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+

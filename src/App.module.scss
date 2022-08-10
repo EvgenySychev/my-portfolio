@@ -1,0 +1,102 @@
+@import "./common/styles/sass/variables";
+
+.container {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background: $bgColor;
+    .wrapper {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 40%;
+        margin-right: 92px;
+        &::before {
+            content: '';
+            position: fixed;
+            left: 45%;
+            right: 92px;
+            top: 0;
+            height: 40px;
+            background: $bgColor;
+            z-index: 13;
+        }
+        .frontImg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+            .circle {
+                clip-path: circle(580px at 10px 430px);
+                .backgroundImg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    box-sizing: border-box;
+
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .wrapper{
+            .frontImg{
+                height: 450px;
+                .circle{
+                    .backgroundImg {
+
+                    }
+                }
+            }
+        }
+
+    }
+    @media screen and (max-width: 1280px) {
+        .wrapper {
+            margin-left: 30%;
+            .frontImg {
+                width: 30%;
+                .circle {
+                    clip-path: circle(550px at 10px 430px)
+                }
+            }
+        }
+    }
+    @media screen and  (max-width: 992px) {
+        .wrapper {
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0;
+            margin-right: 0;
+            .frontImg {
+                position: relative;
+                width: 100%;
+                height: 70vh;
+                .circle {
+                    clip-path: circle(180% at 50% 0%);
+                    .backgroundImg {
+                        background-position: 0% 35%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.rootApp {
+    display: flex;
+}
+
+
+
+
+
+
+

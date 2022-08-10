@@ -1,0 +1,55 @@
+
+.navs {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: -110px;
+  height: 1px;
+  z-index: 1;
+  font-size: 0;
+  display: flex;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 32px;
+    width: 1000%;
+    height: 1px;
+    background: #585d65;
+  }
+  .navsBtn {
+    margin-left: 15px;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 64px;
+    height: 64px;
+    line-height: 62px;
+    background: #373b40;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #585d65;
+    border-radius: 64px;
+    transition: all .3s ease 0s;
+    &::before{
+      content: "\f053";
+    }
+  }
+
+}
+@media screen and (max-width: 720px) {
+  .navs {
+    margin-right: -75px;
+    top: auto;
+    bottom: 64px;
+    right: 50%;
+    .navsBtn {
+      margin-left: 22px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.titles {
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    background: $bgColor;
+    font-size: 55px;
+    line-height: 1.2;
+    color: $textColor;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .subTitle {
+    @include text($fontMain, 14px, $primaryColor);
+    font-weight: 600;
+    background: $bgColor;
+    height: 50px;
+    display: block;
+    line-height: 26px;
+  }
+  @media screen and (max-width: 550px) {
+    .title {
+      font-size: 40px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,54 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.storyBlock {
+  min-height: 90vh;
+  background: $bgColor;
+  border: 1px solid;
+  .storyContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    .descriptionBlock {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .description {
+
+        @include text($fontMain, 14px, $textColor);
+        text-align: center;
+        padding: 0;
+        margin: 30px 0;
+
+      }
+    }
+    .infoList ul {
+      list-style: none;
+      margin: 0 -20px;
+      padding: 0;
+      font-size: 0;
+      li {
+        margin: 0 0 6px;
+        padding: 0 20px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        font-size: 14px;
+        font-weight: 600;
+        strong span {
+          display: inline-block;
+          vertical-align: top;
+          width: 90px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #68e0cf;
+        }
+        span {
+          color: $textColor;
+        }
+      }
+    }
+  }
+}

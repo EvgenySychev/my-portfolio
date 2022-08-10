@@ -1,0 +1,21 @@
+@import "../common/styles/sass/variables";
+
+.achievementsBlock {
+  min-height: 90vh;
+  background-color: $bgColor;
+  border: 1px solid;
+  .achievementsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    .achievements {
+      list-style: none;
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+

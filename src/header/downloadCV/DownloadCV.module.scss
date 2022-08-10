@@ -1,0 +1,42 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.downloadCvBlock {
+
+  border: 1px solid $primaryColor;
+  border-radius: 64px;
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  line-height: 62px;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  float: right;
+  margin-right: 8px;
+
+    .animatedButton {
+      @include text($fontMain, 12px, $primaryColor);
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 16px;
+
+      .icon {
+        margin-left: 10px;
+        transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
+
+        &::before {
+          content: "\f019";
+        }
+      }
+    }
+  }
+

@@ -1,0 +1,32 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.educationBlock {
+  min-height: 50vh;
+  background: $bgColor;
+  border: 1px solid;
+
+  .educationContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    .educationTitle {
+      @include text($fontMain, 14px, $primaryColor);
+      font-weight: 600;
+      text-align: center;
+      background: $bgColor;
+      height: 50px;
+      display: block;
+      line-height: 26px;
+    }
+
+    .carousel {
+      position: relative;
+      z-index: 2;
+
+    }
+
+
+  }
+}

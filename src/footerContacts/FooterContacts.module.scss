@@ -1,0 +1,86 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.footer {
+  padding: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  width: 92px;
+  height: 1px;
+  z-index: 99;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -50vh;
+    left: 0;
+    width: 1px;
+    height: 200vh;
+    background: #585d65;
+  }
+
+  .socials {
+    margin-left: -27px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 54px;
+
+    a {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      margin-bottom: 15px;
+      height: 54px;
+      line-height: 54px;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      background: #373b40;
+      border: 1px solid #585d65;
+      -webkit-border-radius: 54px;
+      -khtml-border-radius: 54px;
+
+      &:hover {
+        background: $primaryColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    margin: 0 0 50px;
+    padding: 0;
+    position: relative;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+
+    &::before {
+      top: 50%;
+      bottom: auto;
+      left: 0;
+      width: 100%;
+      height: 1px
+    }
+
+    .socials {
+      margin-left: 0;
+      position: relative;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0;
+
+      a {
+        display: inline-block;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 0;
+        width: 54px;
+      }
+    }
+  }
+}
