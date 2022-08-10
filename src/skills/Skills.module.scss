@@ -1,4 +1,5 @@
-@import "../common/styles/sass/variables";
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .skillsBlock {
   min-height: 90vh;
@@ -7,6 +8,7 @@
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
+    @include container();
     .skills {
       list-style: none;
       border: 1px solid;

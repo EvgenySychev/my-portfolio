@@ -1,3 +1,5 @@
+@import '../common/styles/sass/mixins';
+
 .remoteWork {
     height: 20vh;
     background-color: #e9ffaa;
@@ -11,4 +13,5 @@
 .block {
     display: flex;
     flex-direction: column;
+    @include container();
 }

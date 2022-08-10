@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import '../common/styles/sass/mixins';
 
 .achievementsBlock {
   min-height: 90vh;
@@ -7,6 +8,7 @@
   .achievementsContainer {
     flex-direction: column;
     justify-content: flex-start;
+    @include container();
     .achievements {
       list-style: none;
       border: 1px solid;

@@ -1,5 +1,5 @@
-@import "../common/styles/sass/variables";
-@import "../common/styles/sass/mixins";
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .storyBlock {
   min-height: 90vh;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    @include container();
     .descriptionBlock {
       border: 1px solid;
       width: 100%;

@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    @include container();
 
     .educationTitle {
       @include text($fontMain, 14px, $primaryColor);

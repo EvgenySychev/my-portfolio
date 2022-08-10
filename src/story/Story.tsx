@@ -1,12 +1,11 @@
 import React from 'react'
 import {Title} from "../common/Components/title/Title";
 import style from './Story.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
 
 export const Story = () => {
     return <div className={style.storyBlock}>
 
-        <div className={`${styleContainer.container} ${style.storyContainer}`}>
+        <div className={style.storyContainer}>
             <div>
                 <Title title={'About Me'}
                        subTitle={'MY STORY'}/>

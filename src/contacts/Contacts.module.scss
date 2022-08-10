@@ -1,5 +1,5 @@
-@import "../common/styles/sass/variables";
-@import "../common/styles/sass/mixins";
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 .contacts {
     height: 50vh;
     background-color: $bgColor;
@@ -7,6 +7,7 @@
     .block {
         display: flex;
         flex-direction: column;
+        @include container();
 
         .contactForm {
             width: 50%;

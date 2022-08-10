@@ -1,5 +1,4 @@
 import React from 'react'
-import styleContainer from '../common/styles/Container.module.css'
 import style from './Achievements.module.scss'
 import {Title} from "../common/Components/title/Title";
 import {Achievement} from "./achievement/Achievement";
@@ -8,7 +7,7 @@ export function Achievements() {
 
     return (
         <div className={style.achievementsBlock}>
-            <div className={`${styleContainer.container} ${style.achievementsContainer}`}>
+            <div className={style.achievementsContainer}>
                 <Title title={'Achievements'}
                        subTitle={'MY AWARDS'}
                 />
