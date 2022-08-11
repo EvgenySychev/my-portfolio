@@ -2,13 +2,13 @@ import style from "./DownloadCV.module.scss"
 
 export const DownloadCV = () => {
     return (
-        <div className={style.downloadCvBlock}>
-            <a>
+
+        <a className={style.downloadCvBlock}>
             <span className={style.animatedButton}>
                 <span>DOWNLOAD CV</span>
             </span>
-                <i className={style.icon}></i>
-            </a>
-        </div>
+            <i className={style.icon}></i>
+        </a>
+
     )
 }

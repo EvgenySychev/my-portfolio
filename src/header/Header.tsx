@@ -6,13 +6,11 @@ import {Logo} from "./logo/Logo";
 
 export function Header() {
     return (
-            <div className={style.header}>
-                <Logo/>
-                <div className={style.nav}>
-                    <Nav/>
-                    <DownloadCV/>
-                </div>
-            </div>
+        <div className={style.header}>
+            <Logo/>
+            <DownloadCV/>
+            <Nav/>
+        </div>
     );
 }
 

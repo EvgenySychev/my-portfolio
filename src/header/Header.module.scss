@@ -1,6 +1,6 @@
 .header {
 
-    padding: 0 0 0 50px;
+    padding: 0 0 0 20px;
     position: fixed;
     left: 50px;
     right: 50px;
@@ -9,13 +9,9 @@
     z-index: 100;
     background: #585d65;
     border-radius: 80px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    .nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .test {
+
     }
 }
 

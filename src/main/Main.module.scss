@@ -115,10 +115,7 @@
 @media screen and (max-width: 992px) {
   .mainBlock {
     margin: 0;
-    padding-top: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 70px;
+    padding: 0 50px 70px;
     width: 100%;
     height: auto !important;
     text-align: center;
@@ -127,8 +124,7 @@
 
       .hTitle {
         font-size: 60px;
-        margin: 0 auto;
-        margin-top: -200px;
+        margin: -200px auto 0;
         padding: 70px 35px 30px;
         max-width: 100%;
         width: 500px;

@@ -1,15 +1,20 @@
 @import "../../common/styles/sass/variables";
 @import "../../common/styles/sass/mixins";
-.logo {
+.logoBlock{
   position: relative;
   width: 40px;
+  height: 40px;
   display: flex;
   font-size: 0;
   line-height: 1.2;
   align-items: center;
-  border-radius: 40px;
-  height: 40px;
-  border: 1px solid $textColor;
+  float: left;
+  margin-top: 20px;
+  .logo {
+
+    border-radius: 40px;
+    border: 1px solid $textColor;
+
     span {
       @include text($fontMain, 18px, $textColor);
       font-weight: 800;
@@ -20,4 +25,5 @@
       padding: 10px;
       cursor: pointer;
     }
+  }
 }
