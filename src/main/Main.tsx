@@ -1,24 +1,37 @@
 import React from 'react'
 import style from './Main.module.scss';
+import TypingEffect from 'new-react-typing-effect';
 
 export function Main() {
     return (
         <div className={style.mainBlock}>
-                <div className={style.text}>
-                    <h1 className={style.hTitle}>
+            <div className={style.text}>
+                <h1 className={style.hTitle}>
                         <span>
                             Evgeny
                         <br/>
                             Sychev
                         </span>
-                    </h1>
-                    <div className={style.startedContent}>
-                        <p>Frontend Developer</p>
-                        <div className={style.description}>
-                            Приветствие zcvzxcvzxcvzxcv zcxvzxcvzxcv zxcvzcvzxcvzxcv zxcvzxcvzxcvzx zxcvzxcvzxcv
-                            zxcvzxcvzxcv
-                        </div>
-                        <button className={style.btnContact}>
+                </h1>
+                <div className={style.startedContent}>
+                    <TypingEffect
+                        messages={["Frontend Developer"]}
+                        cursor="|"
+                        textRenderer={(text, renderedCursor) => {
+                            return <p>{text}{renderedCursor}</p>
+                        }}
+                        options={{
+                            text: {
+                                charactersPerSecond: 20,
+                                fullTextDelayMS: 2000,
+                            },
+                        }}
+                    />
+                    <div className={style.description}>
+                        Приветствие zcvzxcvzxcvzxcv zcxvzxcvzxcv zxcvzcvzxcvzxcv zxcvzxcvzxcvzx zxcvzxcvzxcv
+                        zxcvzxcvzxcv
+                    </div>
+                    <button className={style.btnContact}>
                             <span className={style.animatedBtn}>
                                 <span>
                                     <em>C</em>
@@ -33,10 +46,10 @@ export function Main() {
                                     <em>e</em>
                                 </span>
                             </span>
-                        </button>
+                    </button>
 
-                    </div>
                 </div>
+            </div>
 
 
         </div>
