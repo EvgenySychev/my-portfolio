@@ -35,7 +35,7 @@ export function Skills() {
     const gitHub = {backgroundImage : `url(${gitHubImg})`}
 
     return (
-        <div className={style.skillsBlock}>
+        <div id={'skills'} className={style.skillsBlock}>
             <div className={style.skillsContainer}>
                 <Title title ={'Skills'}
                        subTitle={'DEVELOPING ON'}/>

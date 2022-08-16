@@ -4,7 +4,7 @@ import TypingEffect from 'new-react-typing-effect';
 
 export function Main() {
     return (
-        <div className={style.mainBlock}>
+        <div id={'main'} className={style.mainBlock}>
             <div className={style.text}>
                 <h1 className={style.hTitle}>
                         <span>

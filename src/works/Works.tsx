@@ -20,7 +20,7 @@ export function Works() {
     }
 
     return (
-        <div className={style.worksBlock}>
+        <div id={'works'} className={style.worksBlock}>
             <div className={style.worksContainer}>
                 <Title title={'Portfolio'}
                        subTitle={'LATEST WORKS'}/>

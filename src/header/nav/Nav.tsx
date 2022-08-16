@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './Nav.module.scss';
+import {Link} from 'react-scroll'
 
 export function Nav() {
     return (
@@ -7,39 +8,102 @@ export function Nav() {
             <div className={style.topMenu}>
                 <ul>
                     <li>
-                        <a href="">
-                            <span>Главная</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="main"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-50}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Главная
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Обо мне</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="story"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Обо мне
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Скилы</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="skills"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Скилы
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Проекты</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="works"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Проекты
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Опыт работы</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="activities"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Опыт работы
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Достижения</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="achievements"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Достижения
+                        </Link>
                     </li>
                     <li>
-                        <a href="">
-                            <span>Контакты</span>
-                        </a>
+                        <Link activeClass={style.active}
+                              to="contacts"
+                              spy={true}
+                              smooth={true}
+                              hashSpy={true}
+                              offset={-120}
+                              duration={700}
+                              delay={200}
+                              isDynamic={true}
+                        >
+                            Контакты
+                        </Link>
                     </li>
                 </ul>
             </div>

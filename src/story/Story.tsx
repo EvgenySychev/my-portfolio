@@ -3,7 +3,7 @@ import {Title} from "../common/Components/title/Title";
 import style from './Story.module.scss'
 
 export const Story = () => {
-    return <div className={style.storyBlock}>
+    return <div id={'story'} className={style.storyBlock}>
 
         <div className={style.storyContainer}>
             <div>

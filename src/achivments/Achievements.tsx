@@ -6,7 +6,7 @@ import {Achievement} from "./achievement/Achievement";
 export function Achievements() {
 
     return (
-        <div className={style.achievementsBlock}>
+        <div id={'achievements'} className={style.achievementsBlock}>
             <div className={style.achievementsContainer}>
                 <Title title={'Achievements'}
                        subTitle={'MY AWARDS'}

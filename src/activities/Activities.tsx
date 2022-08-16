@@ -10,7 +10,7 @@ export type ActivitiesType = {
 
 export const Activities = (props: ActivitiesType) => {
     return (
-        <div className={style.educationBlock}>
+        <div id={'activities'} className={style.educationBlock}>
             <div className={style.educationContainer}>
                 <Title title={props.title}
                        subTitle={props.subTitle}/>
