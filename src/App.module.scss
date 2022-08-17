@@ -18,7 +18,7 @@
             top: 0;
             height: 40px;
             background: $bgColor;
-            z-index: 13;
+            z-index: 90;
         }
         .frontImg {
             position: fixed;
@@ -63,6 +63,9 @@
     @media screen and (max-width: 1280px) {
         .wrapper {
             margin-left: 30%;
+            &::before {
+                left: 30%;
+            }
             .frontImg {
                 width: 30%;
                 .circle {
@@ -77,6 +80,10 @@
             margin-top: 0;
             margin-left: 0;
             margin-right: 0;
+            &::before {
+                display: none;
+            }
+
             .frontImg {
                 position: relative;
                 width: 100%;
