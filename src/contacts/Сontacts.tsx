@@ -10,15 +10,14 @@ export function Contacts() {
                     <Title title={'Contacts'}
                            subTitle={'LET\'S TALK'}/>
                 </div>
-                <div>
+                <div className={style.contactFormBlock}>
                     <form className={style.contactForm}>
-                        <input type="text"/>
-                        <input type="text"/>
-                        <textarea/>
+                        <input type="text" name={'name'}/>
+                        <input type="text" name={'lastname'}/>
+                        <textarea />
                         <button type='submit' className={style.submitBtn}>Отправить</button>
                     </form>
                 </div>
-
             </div>
         </div>
     );

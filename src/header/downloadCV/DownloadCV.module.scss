@@ -5,7 +5,7 @@
 
   border: 1px solid $primaryColor;
   border-radius: 64px;
-  padding: 0 40px;
+  padding: 0 10px;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -25,22 +25,53 @@
   color: #fff;
   background: 0 0;
 
-    .animatedButton {
-      @include text($fontMain, 12px, $primaryColor);
-      position: relative;
-      top: -1px;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 16px;
+  .animatedButton {
+    @include text($fontMain, 12px, $primaryColor);
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
 
-      .icon {
-        margin-left: 10px;
-        transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
+    .icon {
+      margin-left: 10px;
+      transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
 
-        &::before {
-          content: "\f019";
-        }
+      &::before {
+        content: "\f019";
       }
     }
   }
+}
+
+@media screen and (max-width: 992px) {
+  .downloadCvBlock {
+    width: 64px;
+    padding: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: $primaryColor;
+    }
+
+  span {
+    display: none;
+  }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 38px;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: $primaryColor;
+    }
+  }
+}
 

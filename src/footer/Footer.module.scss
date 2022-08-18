@@ -8,10 +8,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     .block {
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        @include container();
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 

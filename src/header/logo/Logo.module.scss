@@ -2,18 +2,20 @@
 @import "../../common/styles/sass/mixins";
 .logoBlock{
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 64px;
+  height: 64px;
   display: flex;
   font-size: 0;
   line-height: 1.2;
   align-items: center;
   float: left;
-  margin-top: 20px;
+  margin-top: 8px;
+  margin-left: -10px;
   .logo {
-
-    border-radius: 40px;
+    border-radius: 64px;
     border: 1px solid $textColor;
+    width: 64px;
+    height: 64px;
 
     span {
       @include text($fontMain, 18px, $textColor);
@@ -24,6 +26,8 @@
       text-align: center;
       padding: 10px;
       cursor: pointer;
+      margin-top: 10px;
+      margin-left: 8px;
     }
   }
 }

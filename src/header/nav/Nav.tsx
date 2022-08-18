@@ -2,7 +2,40 @@ import React from 'react'
 import style from './Nav.module.scss';
 import {Link} from 'react-scroll'
 
+type headerMenuSectionType = {
+    name: string
+    link: string
+}
+
 export function Nav() {
+
+    const headersMenuSection: headerMenuSectionType[] = [
+        {name:'Обо мне',link:'story'},
+        {name:'Скилы',link:'skills'},
+        {name:'Проекты',link:'works'},
+        {name:'Опыт работы',link:'activities'},
+        {name:'Достижения',link:'achievements'},
+        {name:'Контакты',link:'contacts'},
+    ]
+
+    const renderHeaderMenu = (name: string, link: string) => {
+        return (
+            <li>
+                <Link activeClass={style.active}
+                      to={link}
+                      spy={true}
+                      smooth={true}
+                      hashSpy={true}
+                      offset={-120}
+                      duration={700}
+                      delay={200}
+                      isDynamic={true}
+                >
+                    {name}
+                </Link>
+            </li>
+        )
+    }
     return (
         <div>
             <div className={style.topMenu}>
@@ -21,90 +54,7 @@ export function Nav() {
                             Главная
                         </Link>
                     </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="story"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Обо мне
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="skills"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Скилы
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="works"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Проекты
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="activities"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Опыт работы
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="achievements"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Достижения
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="contacts"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-120}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Контакты
-                        </Link>
-                    </li>
+                    {headersMenuSection.map(i => renderHeaderMenu(i.name,i.link))}
                 </ul>
             </div>
         </div>

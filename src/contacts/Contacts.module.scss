@@ -1,35 +1,47 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
+
 .contacts {
-    height: 80vh;
-    background-color: $bgColor;
-    border: 1px solid;
-    .block {
+  height: 80vh;
+  background-color: $bgColor;
+  border: 1px solid;
+
+  .block {
+    flex-direction: column;
+    @include container();
+
+    .contactFormBlock {
+      height: 60%;
+
+      .contactForm {
+        width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        @include container();
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        justify-content: space-evenly;
 
-        .contactForm {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            input, textarea {
-                width: 100%;
-            }
-            .submitBtn {
-                padding: 10px 20px;
-                background-color: #d4ffc0;
-                cursor: pointer;
-                &:hover{
-                    background-color: $primaryColor;
-                }
-            }
-            @media screen and (max-width: 560px) {
-                    width: 100%;
-            }
+        input, textarea {
+          width: 100%;
         }
+
+        .submitBtn {
+          padding: 10px 20px;
+          background-color: #d4ffc0;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $primaryColor;
+          }
+        }
+
+        @media screen and (max-width: 560px) {
+          width: 100%;
+        }
+      }
     }
+  }
 }
 
