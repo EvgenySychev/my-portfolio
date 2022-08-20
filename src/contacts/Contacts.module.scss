@@ -4,7 +4,7 @@
 .contacts {
   height: 80vh;
   background-color: $bgColor;
-  border: 1px solid;
+  border-top: 1px solid $borderColor;
 
   .block {
     flex-direction: column;

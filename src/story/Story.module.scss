@@ -4,14 +4,13 @@
 .storyBlock {
   min-height: 90vh;
   background: $bgColor;
-  border: 1px solid;
+  border-top: 1px solid $borderColor;
   .storyContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
     @include container();
     .descriptionBlock {
-      border: 1px solid;
       width: 100%;
       display: flex;
       justify-content: space-between;

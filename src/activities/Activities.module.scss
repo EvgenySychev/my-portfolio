@@ -4,7 +4,7 @@
 .educationBlock {
   min-height: 50vh;
   background: $bgColor;
-  border: 1px solid;
+  border-top: 1px solid $borderColor;
 
   .educationContainer {
     flex-direction: column;

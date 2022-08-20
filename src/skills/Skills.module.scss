@@ -4,14 +4,13 @@
 .skillsBlock {
   min-height: 90vh;
   background-color: $bgColor;
-  border: 1px solid;
+  border-top: 1px solid $borderColor;
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     @include container();
     .skills {
       list-style: none;
-      border: 1px solid;
       width: 100%;
       display: flex;
       justify-content: flex-start;
