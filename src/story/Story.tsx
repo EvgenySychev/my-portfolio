@@ -47,7 +47,7 @@ export const Story = () => {
                         <strong>
                             <span>E-Mail:</span>
                         </strong>
-                        <span>samara808@yandex.ru</span>
+                        <span>e.sychev87 @yandex.ru</span>
                     </li>
                 </ul>
             </div>

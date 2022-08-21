@@ -2,19 +2,20 @@
 @import "../../common/styles/sass/variables";
 
 .burgerTopMenuBlock {
-  position: relative;
   top: 0;
 
   .menuBtnBlock {
 
-    width: 200px;
+    width: 110px;
     height: 100%;
-    background-color: #99d0fb;
+    background-color: $headerColor;
     z-index: 100;
     margin: 0 auto;
     display: block;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
 
     .menuBtn {
       padding: 20px;
@@ -28,7 +29,7 @@
       border: 1px solid rgba(255, 255, 255, .7);
       border-radius: 64px;
       cursor: pointer;
-      background-color: #585d65;
+      background-color: $headerColor;
       z-index: 99;
 
       &::before {
@@ -68,13 +69,13 @@
     right: 0;
     left: 0;
     margin-top: 72px;
-    background-color: #585d65;
-    height: 150px;
-    transform: translate(0, -65px);
+    background-color: $headerColor;
+    height: 180px;
+    transform: translate(0, 0px);
     transition: 0.7s;
 
     ul {
-      margin: 0;
+      margin-top: 20px;
       padding: 0;
       list-style: none;
       height: 80px;
