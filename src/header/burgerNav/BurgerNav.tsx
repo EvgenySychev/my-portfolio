@@ -15,12 +15,12 @@ export function BurgerNav() {
     }
 
     const headersMenuSection: headerMenuSectionType[] = [
-        {name:'Обо мне',link:'story'},
-        {name:'Скилы',link:'skills'},
-        {name:'Проекты',link:'works'},
-        {name:'Опыт работы',link:'activities'},
-        {name:'Достижения',link:'achievements'},
-        {name:'Контакты',link:'contacts'},
+        {name: 'Обо мне', link: 'story'},
+        {name: 'Скилы', link: 'skills'},
+        {name: 'Проекты', link: 'works'},
+        {name: 'Опыт работы', link: 'activities'},
+        {name: 'Достижения', link: 'achievements'},
+        {name: 'Контакты', link: 'contacts'},
     ]
 
     const renderHeaderMenu = (name: string, link: string) => {
@@ -44,7 +44,12 @@ export function BurgerNav() {
     }
 
     return (
-        <div onClick={onBurgerMenuClick}>
+        <div className={style.burgerTopMenuBlock}>
+            <div className={style.menuBtnBlock}>
+                <div className={style.menuBtn} onClick={onBurgerMenuClick}>
+                    <span></span>
+                </div>
+            </div>
             <div className={menuIsOpen
                 ? style.burgerTopMenu
                 : `${style.burgerTopMenu} ${style.show}`}
@@ -65,14 +70,11 @@ export function BurgerNav() {
                             Главная
                         </Link>
                     </li>
-                    {headersMenuSection.map(i => renderHeaderMenu(i.name,i.link))}
+                    {headersMenuSection.map(i => renderHeaderMenu(i.name, i.link))}
                 </ul>
             </div>
-            <div className={style.menuBtn}>
-                <span></span>
-            </div>
+
         </div>
-    )
-        ;
+    );
 }
 

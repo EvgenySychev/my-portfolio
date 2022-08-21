@@ -11,9 +11,9 @@
   &::before {
     content: '';
     position: absolute;
-    left: 18px;
+    left: 40px;
     top: 32px;
-    width: 1000%;
+    width: 70%;
     height: 1px;
     background: #585d65;
   }
@@ -28,7 +28,7 @@
     height: 64px;
     line-height: 62px;
     background: #373b40;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -36,9 +36,7 @@
     border: 1px solid #585d65;
     border-radius: 64px;
     transition: all .3s ease 0s;
-    &::before{
-      content: "\f053";
-    }
+    font-weight: 800;
   }
 
 }

@@ -6,11 +6,25 @@
   background: $bgColor;
   border-top: 1px solid $borderColor;
 
-  .educationContainer {
+    .educationContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
     @include container();
+      &::before {
+        content: '';
+        position: absolute;
+        width: 15%;
+        height: 1px;
+        background: #585d65;
+        margin-top: 39px;
+        margin-left: 75%;
+      }
+      @media screen and (max-width: 720px) {
+        &::before {
+          display: none;
+        }
+      }
 
     .educationTitle {
       @include text($fontMain, 14px, $primaryColor);

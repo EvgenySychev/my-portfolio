@@ -1,5 +1,6 @@
 import style from "./NavigateBtn.module.scss"
 
+
 export const NavigateBtn = () => {
     return (
         <div className={style.navs}>
