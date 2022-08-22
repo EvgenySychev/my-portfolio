@@ -53,13 +53,67 @@
       text-transform: uppercase;
       background: 0 0;
       outline: none;
-      border: 1px solid #585d65;
+      border: 1px solid $borderColor;
       cursor: pointer;
       border-radius: 64px;
       transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
 
       &:hover {
-        background: $primaryColor;
+        border: 1px solid $primaryColor;
+        .animatedBtn {
+          span {
+            em:nth-child(1) {
+              transform: translate(0, -15px);
+              transition-delay: .025s;
+              transition: 0.25s;
+            }
+            em:nth-child(2) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .05s;
+            }
+            em:nth-child(3) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .075s;
+            }
+            em:nth-child(4) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .1s;
+            }
+            em:nth-child(5) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .125s;
+            }
+            em:nth-child(6) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .15s;
+            }
+            em:nth-child(7) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .175s;
+            }
+            em:nth-child(8) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .2s;
+            }
+            em:nth-child(9) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .225s;
+            }
+            em:nth-child(10) {
+              transform: translate(0, -15px);
+              transition: 0.25s;
+              transition-delay: .25s;
+            }
+          }
+        }
       }
 
       .animatedBtn {
@@ -78,19 +132,105 @@
           overflow: hidden;
           display: block;
           text-shadow: 0 16px 0 $primaryColor;
-
-          em {
-            transition-delay: .025s;
+          em:nth-child(1) {
             min-width: 5px;
             display: inline-block;
             vertical-align: middle;
             font-style: normal;
             backface-visibility: hidden;
-            transition: transform .3s ease;
-            -moz-transition: transform .3s ease;
-            -webkit-transition: transform .3s ease;
-            -o-transition: transform .3s ease;
-            transform: translateY(0);
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .025s;
+          }
+          em:nth-child(2) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .05s;
+          }
+          em:nth-child(3) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .075s;
+          }
+          em:nth-child(4) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .1s;
+          }
+          em:nth-child(5) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .125s;
+          }
+          em:nth-child(6) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .15s;
+          }
+          em:nth-child(7) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .175s;
+          }
+          em:nth-child(8) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .2s;
+          }
+          em:nth-child(9) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .225s;
+          }
+          em:nth-child(10) {
+            min-width: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            backface-visibility: hidden;
+            transform: translate(0, 0px);
+            transition: 0.25s;
+            transition-delay: .25s;
           }
         }
       }
@@ -118,6 +258,7 @@
     width: 100%;
     height: auto !important;
     text-align: center;
+
     .text {
       width: 100%;
 
@@ -130,6 +271,7 @@
         background: $bgColor;
         border-radius: 360px 360px 0 0;
       }
+
       @media screen and (max-width: 720px) {
         .hTitle {
           font-size: 48px;

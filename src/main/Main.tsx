@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Main.module.scss';
 import TypingEffect from 'new-react-typing-effect';
+import {Link} from "react-scroll";
 
 export function Main() {
     return (
@@ -31,9 +32,19 @@ export function Main() {
                         Приветствие zcvzxcvzxcvzxcv zcxvzxcvzxcv zxcvzcvzxcvzxcv zxcvzxcvzxcvzx zxcvzxcvzxcv
                         zxcvzxcvzxcv
                     </div>
-                    <button className={style.btnContact}>
-                            <span className={style.animatedBtn}>
-                                <span>
+
+                    <Link className={style.btnContact}
+                          to="contacts"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={true}
+                          offset={-120}
+                          duration={700}
+                          delay={200}
+                          isDynamic={true}
+                    >
+                        <span className={style.animatedBtn}>
+                            <span>
                                     <em>C</em>
                                     <em>o</em>
                                     <em>n</em>
@@ -46,8 +57,7 @@ export function Main() {
                                     <em>e</em>
                                 </span>
                             </span>
-                    </button>
-
+                    </Link>
                 </div>
             </div>
 
