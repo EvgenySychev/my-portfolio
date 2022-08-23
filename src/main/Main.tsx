@@ -45,23 +45,21 @@ export function Main() {
                     >
                         <span className={style.animatedBtn}>
                             <span>
-                                    <em>C</em>
-                                    <em>o</em>
-                                    <em>n</em>
-                                    <em>t</em>
-                                    <em>a</em>
-                                    <em>c</em>
-                                    <em>t</em>
-                                    <em> </em>
-                                    <em>m</em>
-                                    <em>e</em>
-                                </span>
+                                <em>C</em>
+                                <em>o</em>
+                                <em>n</em>
+                                <em>t</em>
+                                <em>a</em>
+                                <em>c</em>
+                                <em>t</em>
+                                <em> </em>
+                                <em>m</em>
+                                <em>e</em>
                             </span>
+                        </span>
                     </Link>
                 </div>
             </div>
-
-
         </div>
     );
 }
