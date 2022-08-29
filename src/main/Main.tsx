@@ -9,9 +9,9 @@ export function Main() {
             <div className={style.text}>
                 <h1 className={style.hTitle}>
                         <span>
-                            Evgeny
+                            Евгений
                         <br/>
-                            Sychev
+                            Сычев
                         </span>
                 </h1>
                 <div className={style.startedContent}>
@@ -29,8 +29,7 @@ export function Main() {
                         }}
                     />
                     <div className={style.description}>
-                        Приветствие zcvzxcvzxcvzxcv zcxvzxcvzxcv zxcvzcvzxcvzxcv zxcvzxcvzxcvzx zxcvzxcvzxcv
-                        zxcvzxcvzxcv
+                        Привет! Я человек, который испытывает страсть к программированию. Занимаюсь Frontend-разработкой пользовательских интерфейсов с помощью JavaScript-библиотеки React. Хорошо знаком со строго типизированным языком программирования TypeScript. Сейчас изучаю набор инструментов для эффективной разработки  Redux Toolkit. Планирую развиваться и обучаться новым технологиям во Frontend разработке (ReactNative) и Backend разработке (NodeJS). Развиваю свой английский. Занимаю активную жизненную позицию.
                     </div>
 
                     <Link className={style.btnContact}
