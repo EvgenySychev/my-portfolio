@@ -1,0 +1,148 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.preloaderBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background: $bgColor;
+
+  .description {
+    font-family: 'Poppins', sans-serif;
+    background: $bgColor;
+    font-size: 55px;
+    line-height: 1.2;
+    color: $textColor;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .button {
+    @include text($fontMain, 12px, $textColor);
+    text-align: center;
+    font-weight: 800;
+    padding: 0 35px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    line-height: 62px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $bgColor;
+    outline: none;
+    border: 1px solid $textColor;
+    cursor: pointer;
+    border-radius: 64px;
+    transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
+
+    &:hover {
+      border: 1px solid $primaryColor;
+      .animatedBtn {
+        span {
+          em {
+            transform: translate(0, -15px);
+            transition-delay: .025s;
+          }
+          em:nth-child(1) {
+            transition: 0.25s;
+          }
+          em:nth-child(2) {
+            transition-delay: .05s;
+          }
+          em:nth-child(3) {
+            transition-delay: .075s;
+          }
+          em:nth-child(4) {
+            transition-delay: .1s;
+          }
+          em:nth-child(5) {
+            transition-delay: .125s;
+          }
+          em:nth-child(6) {
+            transition-delay: .15s;
+          }
+          em:nth-child(7) {
+            transition-delay: .175s;
+          }
+          em:nth-child(8) {
+            transition-delay: .2s;
+          }
+          em:nth-child(9) {
+            transition-delay: .225s;
+          }
+          em:nth-child(10) {
+            transition-delay: .25s;
+          }
+          em:nth-child(11) {
+            transition-delay: .275s;
+          }
+        }
+      }
+    }
+
+    .animatedBtn {
+      @include text($fontMain, 12px, $textColor);
+      text-align: center;
+      font-weight: 800;
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 16px;
+      text-transform: uppercase;
+
+      span {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        text-shadow: 0 16px 0 $primaryColor;
+        em {
+          min-width: 5px;
+          display: inline-block;
+          vertical-align: middle;
+          font-style: normal;
+          backface-visibility: hidden;
+          transform: translate(0, 0px);
+          transition: 0.25s;
+        }
+        em:nth-child(1) {
+          transition-delay: .025s;
+        }
+        em:nth-child(2) {
+          transition-delay: .05s;
+        }
+        em:nth-child(3) {
+          transition-delay: .075s;
+        }
+        em:nth-child(4) {
+          transition-delay: .1s;
+        }
+        em:nth-child(5) {
+          transition-delay: .125s;
+        }
+        em:nth-child(6) {
+          transition-delay: .15s;
+        }
+        em:nth-child(7) {
+          transition-delay: .175s;
+        }
+        em:nth-child(8) {
+          transition-delay: .2s;
+        }
+        em:nth-child(9) {
+          transition-delay: .225s;
+        }
+        em:nth-child(10) {
+          transition-delay: .25s;
+        }
+        em:nth-child(11) {
+          transition-delay: .275s;
+        }
+      }
+    }
+  }
+}

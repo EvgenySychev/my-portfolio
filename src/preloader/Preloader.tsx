@@ -1,4 +1,6 @@
 import React from "react";
+import preloaderGif from "../assets/gif/preloader small.gif";
+import style from "./Preloader.module.scss"
 
 type PreloaderPropsType = {
     callBack: () => void
@@ -11,9 +13,28 @@ export const Preloader = (props: PreloaderPropsType) => {
     }
 
     return (
-        <div>
-            <span> Сайт в процессе разработки...</span>
-            <button onClick={switchHandler}>Я работодатель. Хочу посмотреть, что уже сделано</button>
+        <div className={style.preloaderBlock}>
+            <span className={style.description}>
+                portfolio in progress...
+                <img src={preloaderGif} alt="preloader..."/>
+            </span>
+            <div className={style.button} onClick={switchHandler}>
+                <span className={style.animatedBtn}>
+                            <span>
+                                <em>L</em>
+                                <em>o</em>
+                                <em>o</em>
+                                <em>k</em>
+                                <em> </em>
+                                <em>a</em>
+                                <em>n</em>
+                                <em>y</em>
+                                <em>w</em>
+                                <em>a</em>
+                                <em>y</em>
+                            </span>
+                        </span>
+            </div>
         </div>
     )
 }
