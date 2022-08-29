@@ -35,7 +35,8 @@
 
     .description {
       @include text($fontMain, 14px, $textColor);
-      margin: 0 0 30px;
+      margin: 30px 0;
+      line-height: 26px;
     }
 
     .btnContact {
