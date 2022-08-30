@@ -17,7 +17,7 @@
     left: 0;
     width: 1px;
     height: 200vh;
-    background: #585d65;
+    background: $borderColor;
   }
 
   .socials {
@@ -28,22 +28,21 @@
     width: 54px;
 
     a {
+      @include text($fontMain, 12px, $textColor);
       cursor: pointer;
       position: relative;
       display: block;
       margin-bottom: 15px;
       height: 54px;
       line-height: 54px;
-      font-size: 16px;
-      color: #fff;
+      border-radius: 54px;
       text-align: center;
-      background: #373b40;
-      border: 1px solid #585d65;
-      -webkit-border-radius: 54px;
-      -khtml-border-radius: 54px;
+      left: 0;
+      right: 0;
+      border: 1px solid $borderColor;
 
       &:hover {
-        background: $primaryColor;
+background-color: $primaryColor;
       }
     }
   }
