@@ -1,0 +1,45 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/mixins';
+
+.box {
+
+  &:hover {
+    .animatedBtn {
+      span {
+        em {
+          transform: translate(0, -15px);
+          transition-delay: .025s;
+        }
+      }
+    }
+  }
+
+  .animatedBtn {
+    @include text($fontMain, 12px, $textColor);
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    span {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      text-shadow: 0 16px 0 $primaryColor;
+
+      em {
+        min-width: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        font-style: normal;
+        backface-visibility: hidden;
+        transform: translate(0, 0px);
+        transition: 0.25s;
+      }
+    }
+  }
+}

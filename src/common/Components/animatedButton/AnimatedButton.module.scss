@@ -1,0 +1,26 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.button {
+  @include text($fontMain, 12px, $textColor);
+  text-align: center;
+  font-weight: 800;
+  padding: 0 35px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  line-height: 62px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: $bgColor;
+  outline: none;
+  border: 1px solid $textColor;
+  cursor: pointer;
+  border-radius: 64px;
+  transition: 1s all cubic-bezier(.165, .85, .45, 1) 0s;
+  &:hover {
+    border: 1px solid $primaryColor;
+  }
+}
