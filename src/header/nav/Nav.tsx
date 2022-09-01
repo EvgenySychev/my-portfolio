@@ -11,6 +11,7 @@ type headerMenuSectionType = {
 export function Nav() {
 
     const headersMenuSection: headerMenuSectionType[] = [
+        {name:'Главная',link:'main'},
         {name:'Обо мне',link:'story'},
         {name:'Скилы',link:'skills'},
         {name:'Проекты',link:'works'},
@@ -41,20 +42,6 @@ export function Nav() {
         <div>
             <div className={style.topMenu}>
                 <ul>
-                    <li>
-                        <Link activeClass={style.active}
-                              to="main"
-                              spy={true}
-                              smooth={true}
-                              hashSpy={true}
-                              offset={-50}
-                              duration={700}
-                              delay={200}
-                              isDynamic={true}
-                        >
-                            Главная
-                        </Link>
-                    </li>
                     {headersMenuSection.map(i => renderHeaderMenu(i.name,i.link))}
                 </ul>
             </div>
