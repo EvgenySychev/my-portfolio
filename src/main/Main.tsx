@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Main.module.scss';
 import TypingEffect from 'new-react-typing-effect';
 import {Link} from "react-scroll";
+import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
 
 export function Main() {
     return (
@@ -29,33 +30,28 @@ export function Main() {
                         }}
                     />
                     <div className={style.description}>
-                        Привет! Я человек, который испытывает страсть к программированию. Занимаюсь Frontend-разработкой пользовательских интерфейсов с помощью JavaScript-библиотеки React. Хорошо знаком со строго типизированным языком программирования TypeScript. Сейчас изучаю набор инструментов для эффективной разработки  Redux Toolkit. Планирую развиваться и обучаться новым технологиям во Frontend разработке (ReactNative) и Backend разработке (NodeJS). Развиваю свой английский. Занимаю активную жизненную позицию.
+                        Привет! Я человек, который испытывает страсть к программированию. Занимаюсь Frontend-разработкой
+                        пользовательских интерфейсов с помощью JavaScript-библиотеки React. Хорошо знаком со строго
+                        типизированным языком программирования TypeScript. Сейчас изучаю набор инструментов для
+                        эффективной разработки Redux Toolkit. Планирую развиваться и обучаться новым технологиям во
+                        Frontend разработке (ReactNative) и Backend разработке (NodeJS). Развиваю свой английский.
+                        Занимаю активную жизненную позицию.
                     </div>
 
-                    <Link className={style.btnContact}
-                          to="contacts"
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={-120}
-                          duration={700}
-                          delay={200}
-                          isDynamic={true}
+                    <Link
+                        to="contacts"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-120}
+                        duration={700}
+                        delay={200}
+                        isDynamic={true}
                     >
-                        <span className={style.animatedBtn}>
-                            <span>
-                                <em>C</em>
-                                <em>o</em>
-                                <em>n</em>
-                                <em>t</em>
-                                <em>a</em>
-                                <em>c</em>
-                                <em>t</em>
-                                <em> </em>
-                                <em>m</em>
-                                <em>e</em>
-                            </span>
-                        </span>
+                        <AnimatedButton
+                            value={'Contact me'}
+                        />
+
                     </Link>
                 </div>
             </div>

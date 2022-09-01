@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Nav.module.scss';
 import {Link} from 'react-scroll'
+import {AscendingText} from "../../common/Components/animatedButton/ascendingText/AscendingText";
 
 type headerMenuSectionType = {
     name: string
@@ -31,7 +32,7 @@ export function Nav() {
                       delay={200}
                       isDynamic={true}
                 >
-                    {name}
+                    <AscendingText value={name}/>
                 </Link>
             </li>
         )
