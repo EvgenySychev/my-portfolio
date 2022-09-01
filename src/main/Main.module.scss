@@ -63,54 +63,38 @@
         border: 1px solid $primaryColor;
         .animatedBtn {
           span {
-            em:nth-child(1) {
+            em{
               transform: translate(0, -15px);
               transition-delay: .025s;
+            }
+            em:nth-child(1) {
               transition: 0.25s;
             }
             em:nth-child(2) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .05s;
             }
             em:nth-child(3) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .075s;
             }
             em:nth-child(4) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .1s;
             }
             em:nth-child(5) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .125s;
             }
             em:nth-child(6) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .15s;
             }
             em:nth-child(7) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .175s;
             }
             em:nth-child(8) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .2s;
             }
             em:nth-child(9) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .225s;
             }
             em:nth-child(10) {
-              transform: translate(0, -15px);
-              transition: 0.25s;
               transition-delay: .25s;
             }
           }
@@ -127,13 +111,12 @@
         vertical-align: middle;
         line-height: 16px;
         text-transform: uppercase;
-
         span {
           position: relative;
           overflow: hidden;
           display: block;
           text-shadow: 0 16px 0 $primaryColor;
-          em:nth-child(1) {
+          em {
             min-width: 5px;
             display: inline-block;
             vertical-align: middle;
@@ -141,96 +124,35 @@
             backface-visibility: hidden;
             transform: translate(0, 0px);
             transition: 0.25s;
+          }
+          em:nth-child(1) {
             transition-delay: .025s;
           }
           em:nth-child(2) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .05s;
           }
           em:nth-child(3) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .075s;
           }
           em:nth-child(4) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .1s;
           }
           em:nth-child(5) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .125s;
           }
           em:nth-child(6) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .15s;
           }
           em:nth-child(7) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .175s;
           }
           em:nth-child(8) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .2s;
           }
           em:nth-child(9) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .225s;
           }
           em:nth-child(10) {
-            min-width: 5px;
-            display: inline-block;
-            vertical-align: middle;
-            font-style: normal;
-            backface-visibility: hidden;
-            transform: translate(0, 0px);
-            transition: 0.25s;
             transition-delay: .25s;
           }
         }
