@@ -40,9 +40,13 @@
       left: 0;
       right: 0;
       border: 1px solid $borderColor;
+      text-decoration: none;
 
       &:hover {
-background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        span {
+          color: $primaryColor;
+        }
       }
     }
   }
