@@ -28,15 +28,15 @@ export const ActivityBlock = (props: ActivityBlockType) => {
             (<div className={style.activities}>
                 <ActivityItem
                     date={'2004-2009'}
-                    placeName={'IzhGTU'}
-                    placeLocation={'IZHEVSK'}
-                    description={'description about same university description about same university description about same university description about same university description about same university description about same university description about same university'}
+                    placeName={'Ижевский государственная технический университет'}
+                    placeLocation={'г.Ижевск'}
+                    description={'факультет «Современные технологии и автомобили», специальность «Технология роботизированного производства», квалификация - инженер'}
                 />
                 <ActivityItem
                     date={'2010-2013'}
-                    placeName={'IzhGSHA'}
-                    placeLocation={'IZHEVSK'}
-                    description={'description about same university description about same university description about same university description about same university description about same university description about same university'}
+                    placeName={'Ижевская государственная сельскохозяйственная академия'}
+                    placeLocation={'г.Ижевск'}
+                    description={'факультет «Дополнительного профессионального образования», специальность «Бухгалтерский учет, анализ и аудит», квалификация - экономист'}
                 />
             </div>)}
         </div>
