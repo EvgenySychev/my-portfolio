@@ -32,7 +32,7 @@ export const Contacts = () => {
             }
             if (!values.message) {
                 errors.message = 'Required'
-            } else if (values.name.length < 2) {
+            } else if (values.message.length < 2) {
                 errors.message = 'Must be 2 characters or more'
             }
 
@@ -53,7 +53,7 @@ export const Contacts = () => {
                 </div>
                 <div className={style.contactFormBlock}>
                     <form onSubmit={formik.handleSubmit} className={style.contactForm}>
-                        <div className={style.inputBlock} >
+                        <div className={style.inputBlock}>
                             <input type="text" placeholder={'Евгений Frontend-Developer'}
                                    {...formik.getFieldProps('name')}
                             />
