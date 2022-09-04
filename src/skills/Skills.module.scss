@@ -18,6 +18,11 @@
       padding-left: 0;
       li {
         width: 33%;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.3);
+        }
       }
     }
   }
