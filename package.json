@@ -13,6 +13,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.4",
+    "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "new-react-typing-effect": "^1.2.4",
     "node-sass": "^7.0.1",

@@ -6,14 +6,14 @@ export type TitleType ={
     subTitle: string
 }
 
-export function Title(props: TitleType) {
+export function Title({title,subTitle}: TitleType) {
     return (
         <div className={style.titles}>
             <h2 className={style.title}>
-                {props.title}
+                {title}
             </h2>
             <div className={style.subTitle}>
-                <span> {props.subTitle}</span>
+                <span> {subTitle}</span>
             </div>
         </div>
 

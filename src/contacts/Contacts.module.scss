@@ -9,32 +9,32 @@
   .block {
     flex-direction: column;
     @include container();
+    justify-content: flex-start;
 
     .contactFormBlock {
-      height: 60%;
+      height: 70%;
 
       .contactForm {
-        width: 50%;
+        width: 70%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        padding-bottom: 100px;
+
         justify-content: space-evenly;
+
+        .inputBlock {
+          width: 70%;
+          height: 30px;
+        }
+
+        .errorMessage {
+          @include text ($fontMain, 20px, red);
+        }
 
         input, textarea {
           width: 100%;
-        }
-
-        .submitBtn {
-          padding: 10px 20px;
-          background-color: #d4ffc0;
-          cursor: pointer;
-
-          &:hover {
-            background-color: $primaryColor;
-          }
         }
 
         @media screen and (max-width: 560px) {
