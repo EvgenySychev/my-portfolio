@@ -10,18 +10,11 @@ import cardsImg from './../assets/image/cards.jpg'
 
 export function Works() {
 
-    const socialNetwork = {
-        backgroundImage: `url(${socialImg})`
-    }
-    const todoList = {
-        backgroundImage: `url(${todoListImg})`
-    }
-    const counter = {
-        backgroundImage: `url(${counterImg})`
-    }
-
-    const cards = {
-        backgroundImage: `url(${cardsImg})`
+    const backgroundImageForWorks = {
+        socialNetwork : {backgroundImage: `url(${socialImg})`},
+        todoList : {backgroundImage: `url(${todoListImg})`},
+        counter : {backgroundImage: `url(${counterImg})`},
+        cards : {backgroundImage: `url(${cardsImg})`}
     }
 
     return (
@@ -31,16 +24,20 @@ export function Works() {
                        subTitle={'LATEST WORKS'}/>
                 <div className={style.works}>
                     <Work title={"Counter"}
-                          style={counter}
+                          style={backgroundImageForWorks.counter}
+                          linkToWork={"https://EvgenySychev.github.io/counter"}
                           description={"Мой первый проект на React. Использовал функциональные компоненты. Сделал верстку. Реализовал логику работы приложения. Работа с Localstorage. Для эффективного хранения данных приложения использовал библиотеку Redux"}/>
                     <Work title={"Social network"}
-                          style={socialNetwork}
+                          style={backgroundImageForWorks.socialNetwork}
+                          linkToWork={""}
                           description={"Учебный проект. Написан с использованием классовых и функциональных компонент. Верстка с помощью Grid. Маршрутизация, route, browser-router. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios"}/>
                     <Work title={"Todolist"}
-                          style={todoList}
+                          style={backgroundImageForWorks.todoList}
+                          linkToWork={"https://EvgenySychev.github.io/TO-DO_LIST"}
                           description={"Учебный проект. Написан с использованием функциональных компонент. Так же использовалась библиотека Material UI. Разработка приложения через тестирование TDD. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Разработка формы логинизации, обработка ошибок запросов на сервер"}/>
                     <Work title={"Card"}
-                          style={cards}
+                          style={backgroundImageForWorks.cards}
+                          linkToWork={""}
                           description={"В разработке"}/>
                 </div>
             </div>
