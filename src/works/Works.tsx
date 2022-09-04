@@ -30,7 +30,9 @@ export function Works() {
                     <Work title={"Social network"}
                           style={backgroundImageForWorks.socialNetwork}
                           linkToWork={""}
-                          description={"Учебный проект. Написан с использованием классовых и функциональных компонент. Верстка с помощью Grid. Маршрутизация, route, browser-router. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios"}/>
+                          /*description={"Учебный проект. Написан с использованием классовых и функциональных компонент. Верстка с помощью Grid. Маршрутизация, route, browser-router. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios"}*/
+                          description={"В разработке"}
+                    />
                     <Work title={"Todolist"}
                           style={backgroundImageForWorks.todoList}
                           linkToWork={"https://EvgenySychev.github.io/TO-DO_LIST"}
