@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Contacts.module.scss';
 import {Title} from "../common/Components/title/Title";
+import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
 
 export function Contacts() {
     return (
@@ -15,7 +16,7 @@ export function Contacts() {
                         <input type="text" name={'name'}/>
                         <input type="text" name={'lastname'}/>
                         <textarea />
-                        <button type='submit' className={style.submitBtn}>Отправить</button>
+                        <AnimatedButton type={"submit"} value={'Send message'}/>
                     </form>
                 </div>
             </div>

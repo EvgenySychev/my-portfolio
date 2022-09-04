@@ -16,10 +16,16 @@ import htmlImg from './../assets/image/html.webp'
 import storybookImg from './../assets/image/storybook.png'
 import materialUiImg from './../assets/image/materialUI.png'
 import gitHubImg from './../assets/image/gitHub.jpg'
+import {BackgroundImageType} from "../App";
 
-export function Skills() {
+type SkillItemsType = {
+    title: string
+    imgUrl: BackgroundImageType
+}
 
-    const skillsImg = [
+export const Skills = () => {
+
+    const skillsImg: SkillItemsType[] = [
         {title: "REACT", imgUrl: {backgroundImage: `url(${reactImg})`}},
         {title: "REDUX", imgUrl: {backgroundImage: `url(${reduxImg})`}},
         {title: "TS", imgUrl: {backgroundImage: `url(${tsImg})`}},

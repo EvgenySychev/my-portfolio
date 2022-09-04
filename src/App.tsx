@@ -14,10 +14,14 @@ import {Achievements} from "./achivments/Achievements";
 import {useState} from "react";
 import {Preloader} from "./preloader/Preloader";
 
+export type BackgroundImageType = {
+    backgroundImage: string
+}
+
 
 function App() {
 
-    const front = {backgroundImage: `url(${frontImg})`}
+    const front:BackgroundImageType = {backgroundImage: `url(${frontImg})`}
     const [indicator, setIndicator] = useState(true)
 
     const setIndicatorHandler = () => {
@@ -34,7 +38,7 @@ function App() {
                 <div className={s.wrapper}>
                     <div className={s.frontImg}>
                         <div className={s.circle}>
-                            <div className={s.backgroundImg} style={front}></div>
+                            <div className={s.backgroundImg} style={front}/>
                         </div>
                     </div>
                     <div>
@@ -57,8 +61,8 @@ function App() {
                 </footer>
             </div>
 
-)
-    ;
+    )
+        ;
 }
 
 export default App;

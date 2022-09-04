@@ -6,12 +6,13 @@ import {AscendingText} from "./ascendingText/AscendingText";
 type TextInsideButtonPropsType = {
     value: string
     callBack?: () => void
+    type?: "button" | "submit" | "reset"
 }
 
-export const AnimatedButton = ({value, callBack}: TextInsideButtonPropsType) => {
+export const AnimatedButton = ({value, callBack, type}: TextInsideButtonPropsType) => {
     return (
-        <div onClick={callBack} className={style.button} >
+        <button type={type} onClick={callBack} className={style.button} >
             <AscendingText value={value}/>
-        </div>
+        </button>
     )
 }
