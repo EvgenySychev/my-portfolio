@@ -5,7 +5,7 @@ import {DownloadCV} from "./downloadCV/DownloadCV";
 import {Logo} from "./logo/Logo";
 import {BurgerNav} from "./burgerNav/BurgerNav";
 
-export function Header() {
+export const Header = () => {
     return (
         <div className={style.header}>
             <Logo/>

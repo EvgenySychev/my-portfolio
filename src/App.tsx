@@ -19,9 +19,9 @@ export type BackgroundImageType = {
 }
 
 
-function App() {
+export const App = () => {
 
-    const front:BackgroundImageType = {backgroundImage: `url(${frontImg})`}
+    const front: BackgroundImageType = {backgroundImage: `url(${frontImg})`}
     const [indicator, setIndicator] = useState(true)
 
     const setIndicatorHandler = () => {
@@ -55,14 +55,9 @@ function App() {
                         <Footer/>
                     </div>
                 </div>
-
                 <footer>
                     <FooterContacts/>
                 </footer>
             </div>
-
-    )
-        ;
+    );
 }
-
-export default App;

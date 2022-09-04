@@ -3,9 +3,9 @@ import style from './Contacts.module.scss';
 import {Title} from "../common/Components/title/Title";
 import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
 
-export function Contacts() {
+export const Contacts = () => {
     return (
-        <div id={'contacts'} className={style.contacts} >
+        <div id={'contacts'} className={style.contacts}>
             <div className={style.block}>
                 <div>
                     <Title title={'Contacts'}
@@ -15,7 +15,7 @@ export function Contacts() {
                     <form className={style.contactForm}>
                         <input type="text" name={'name'}/>
                         <input type="text" name={'lastname'}/>
-                        <textarea />
+                        <textarea/>
                         <AnimatedButton type={"submit"} value={'Send message'}/>
                     </form>
                 </div>

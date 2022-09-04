@@ -8,14 +8,14 @@ export type ActivitiesType = {
     subTitle: string
 }
 
-export const Activities = (props: ActivitiesType) => {
+export const Activities = ({title,subTitle}: ActivitiesType) => {
     return (
         <div id={'activities'} className={style.educationBlock}>
             <div className={style.educationContainer}>
-                <Title title={props.title}
-                       subTitle={props.subTitle}/>
+                <Title title={title}
+                       subTitle={subTitle}/>
                 <div className={style.carousel}>
-                    <ActivityBlock title={props.title}/>
+                    <ActivityBlock title={title}/>
                     <div >
                         <NavigateBtn/>
                     </div>

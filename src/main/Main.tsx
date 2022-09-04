@@ -4,7 +4,7 @@ import TypingEffect from 'new-react-typing-effect';
 import {Link} from "react-scroll";
 import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
 
-export function Main() {
+export const Main = () => {
     return (
         <div id={'main'} className={style.mainBlock}>
             <div className={style.text}>
