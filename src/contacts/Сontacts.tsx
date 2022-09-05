@@ -3,43 +3,60 @@ import style from './Contacts.module.scss';
 import {Title} from "../common/Components/title/Title";
 import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
 import {useFormik} from "formik";
+import * as emailjs from 'emailjs-com';
 
 type FormikErrorType = {
     email?: string
     name?: string
     message?: string
+    subject?: string
 }
+
+const SERVICE_ID = "service_q3t5x48";
+const TEMPLATE_ID = "template_8gxhpvv";
+const USER_ID = "F9NhMwLzikdqGCR_5";
+
+
 
 export const Contacts = () => {
 
     const formik = useFormik({
         initialValues: {
-            email: '',
             name: '',
+            emailAdmin: 'Евгений',
+            subject: " 'my-portfolio' ",
+            email: '',
             message: '',
         },
         validate: (values) => {
             const errors: FormikErrorType = {}
             if (!values.email) {
-                errors.email = 'Required'
+                errors.email = 'Необходимо заполнить'
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-                errors.email = 'Invalid email address'
+                errors.email = 'Не верный формат адреса'
             }
             if (!values.name) {
-                errors.name = 'Required'
+                errors.name = 'Необходимо заполнить'
             } else if (values.name.length < 2) {
-                errors.name = 'Must be 2 characters or more'
+                errors.name = 'Должно быть 2 или более символа'
             }
             if (!values.message) {
-                errors.message = 'Required'
+                errors.message = 'Необходимо заполнить'
             } else if (values.message.length < 2) {
-                errors.message = 'Must be 2 characters or more'
+                errors.message = 'Должно быть 2 или более символа'
             }
 
             return errors
         },
         onSubmit: values => {
-            alert(`отправлено ${values.message}`)
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, values, USER_ID)
+                .then(() => {
+                    console.log('message send');
+                })
+                .catch((e)=> {
+                    console.error(e)
+                })
+            ;
             formik.resetForm();
         },
     });
@@ -52,29 +69,32 @@ export const Contacts = () => {
                            subTitle={'LET \'S TALK'}/>
                 </div>
                 <div className={style.contactFormBlock}>
-                    <form onSubmit={formik.handleSubmit} className={style.contactForm}>
-                        <div className={style.inputBlock}>
-                            <input type="text" placeholder={'Евгений Frontend-Developer'}
-                                   {...formik.getFieldProps('name')}
-                            />
-                            {formik.touched.name && formik.errors.name &&
-                                <div style={{color: 'red'}}>{formik.errors.name}</div>}
-                        </div>
-                        <div className={style.inputBlock}>
-                            <input type="email" placeholder={'example@domain.ru'}
-                                   {...formik.getFieldProps('email')}
-                            />
-                            {formik.touched.email && formik.errors.email &&
-                                <div style={{color: 'red'}}>{formik.errors.email}</div>}
-                        </div>
-                        <div className={style.inputBlock}>
-                            <textarea {...formik.getFieldProps('message')}/>
-                            {formik.touched.message && formik.errors.message &&
-                                <div style={{color: 'red'}}>{formik.errors.message}</div>}
-                        </div>
+                        <form onSubmit={formik.handleSubmit} className={style.contactForm}>
+                            <div className={style.inputBlock}>
+                                <input type="text" placeholder={'Ваше имя'}
+                                       {...formik.getFieldProps('name')}
+                                />
+                                {formik.touched.name && formik.errors.name &&
+                                    <div style={{color: 'red'}}>{formik.errors.name}</div>}
+                            </div>
+                            <div className={style.inputBlock}>
+                                <input type="email" placeholder={'example@domain.ru'}
+                                       {...formik.getFieldProps('email')}
+                                />
+                                {formik.touched.email && formik.errors.email &&
+                                    <div style={{color: 'red'}}>{formik.errors.email}</div>}
+                            </div>
+                            <div className={style.inputBlock}>
+                                <textarea placeholder={'Ваше сообщение'}
+                                          {...formik.getFieldProps('message')}
+                                />
+                                {formik.touched.message && formik.errors.message &&
+                                    <div style={{color: 'red'}}>{formik.errors.message}</div>}
+                            </div>
 
-                        <AnimatedButton type={"submit"} value={'Send message'}/>
-                    </form>
+                            <AnimatedButton type={"submit"} value={'Send message'}/>
+                        </form>
+
                 </div>
             </div>
         </div>
