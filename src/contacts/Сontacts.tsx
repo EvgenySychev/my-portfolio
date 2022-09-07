@@ -16,8 +16,6 @@ const SERVICE_ID = "service_q3t5x48";
 const TEMPLATE_ID = "template_8gxhpvv";
 const USER_ID = "F9NhMwLzikdqGCR_5";
 
-
-
 export const Contacts = () => {
 
     const formik = useFormik({
