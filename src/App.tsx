@@ -18,15 +18,12 @@ export type BackgroundImageType = {
     backgroundImage: string
 }
 
-
 export const App = () => {
 
     const front: BackgroundImageType = {backgroundImage: `url(${frontImg})`}
     const [indicator, setIndicator] = useState(true)
 
-    const setIndicatorHandler = () => {
-        setIndicator(false)
-    }
+    const setIndicatorHandler = () => setIndicator(false)
 
     return (
         indicator
