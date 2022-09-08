@@ -16,6 +16,15 @@
       justify-content: flex-start;
       flex-wrap: wrap;
     }
+    .description {
+      p {
+        @include text($fontMain, 10px, $primaryColor);
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        opacity: .9;
+      }
+    }
   }
 }
 
