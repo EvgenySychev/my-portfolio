@@ -1,0 +1,13 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.titleName {
+  @include text($fontMain, 4.2vw, $textColor);
+  margin: 40px 0 0 -14vw;
+  padding: 4.2vw;
+  line-height: 1.4;
+  font-weight: 800;
+  background: #373b40;
+  word-break: break-word;
+  border-radius: 264px;
+}

@@ -3,18 +3,16 @@ import style from './Main.module.scss';
 import TypingEffect from 'new-react-typing-effect';
 import {Link} from "react-scroll";
 import {AnimatedButton} from "../../common/Components/animatedButton/AnimatedButton";
+import {TitleName} from "./titleName/TitleName";
 
 export const Main = () => {
     return (
         <div id={'main'} className={style.mainBlock}>
             <div className={style.text}>
-                <h1 className={style.hTitle}>
-                        <span>
-                            Евгений
-                        <br/>
-                            Сычев
-                        </span>
-                </h1>
+                <TitleName
+                    name={'Евгений'}
+                    surname={'Сычев'}
+                />
                 <div className={style.startedContent}>
                     <TypingEffect
                         messages={["Frontend Developer"]}
