@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Main.module.scss';
 import TypingEffect from 'new-react-typing-effect';
 import {Link} from "react-scroll";
-import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
+import {AnimatedButton} from "../../common/Components/animatedButton/AnimatedButton";
 
 export const Main = () => {
     return (

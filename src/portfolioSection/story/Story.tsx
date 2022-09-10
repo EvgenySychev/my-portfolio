@@ -1,7 +1,7 @@
 import React from 'react'
-import {Title} from "../common/Components/title/Title";
+import {Title} from "../../common/Components/title/Title";
 import style from './Story.module.scss'
-import {ContactItem} from "../common/Components/contactItem/ContactItem";
+import {ContactItem} from "../../common/Components/contactItem/ContactItem";
 
 export const Story = () => {
     return <div id={'story'} className={style.storyBlock}>

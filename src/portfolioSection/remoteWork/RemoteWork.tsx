@@ -1,5 +1,5 @@
 import React from 'react'
-import style from 'src/remoteWork/RemoteWork.module.scss';
+import style from 'src/portfolioSection/remoteWork/RemoteWork.module.scss';
 
 export function RemoteWork() {
     return (

@@ -1,12 +1,12 @@
 import React from 'react'
 import style from './Works.module.scss';
 import {Work} from './work/Work';
-import {Title} from '../common/Components/title/Title';
-import socialImg from './../assets/image/cs_networking.jpg'
-import todoListImg from './../assets/image/Todolist.jpeg'
-import counterImg from './../assets/image/counter.png'
-import cardsImg from './../assets/image/cards.jpg'
-import {BackgroundImageType} from "../App";
+import {Title} from '../../common/Components/title/Title';
+import socialImg from './../../assets/image/cs_networking.jpg'
+import todoListImg from './../../assets/image/Todolist.jpeg'
+import counterImg from './../../assets/image/counter.png'
+import cardsImg from './../../assets/image/cards.jpg'
+import {BackgroundImageType} from "../../App";
 
 type workItemType = {
     title: string

@@ -1,16 +1,16 @@
 import './App.css';
 import {Header} from "./header/Header";
-import {Main} from "./main/Main";
-import {Skills} from "./skills/Skills";
-import {Works} from "./works/Works";
-import {Contacts} from "./contacts/Сontacts";
-import {Footer} from "./footer/Footer";
+import {Main} from "./portfolioSection/main/Main";
+import {Skills} from "./portfolioSection/skills/Skills";
+import {Works} from "./portfolioSection/works/Works";
+import {Contacts} from "./portfolioSection/contacts/Сontacts";
+import {Footer} from "./portfolioSection/footer/Footer";
 import frontImg from './assets/image/SychFull.jpg'
 import s from './App.module.scss'
 import {FooterContacts} from "./footerContacts/FooterContacts";
-import {Story} from "./story/Story";
-import {Activities} from "./activities/Activities";
-import {Achievements} from "./achivments/Achievements";
+import {Story} from "./portfolioSection/story/Story";
+import {Activities} from "./portfolioSection/activities/Activities";
+import {Achievements} from "./portfolioSection/achivments/Achievements";
 import {useState} from "react";
 import {Preloader} from "./preloader/Preloader";
 
