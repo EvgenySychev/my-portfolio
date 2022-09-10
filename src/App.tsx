@@ -43,10 +43,14 @@ export const App = () => {
                         <Story/>
                         <Skills/>
                         <Works/>
-                        <Activities title={'Experience'}
-                                    subTitle={'WORKING WITH'}/>
-                        <Activities title={'Education'}
-                                    subTitle={'STUDIED AT'}/>
+                        <Activities
+                            title={'Experience'}
+                            subTitle={'WORKING WITH'}
+                        />
+                        <Activities
+                            title={'Education'}
+                            subTitle={'STUDIED AT'}
+                        />
                         <Achievements/>
                         <Contacts/>
                         <Footer/>
