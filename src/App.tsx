@@ -21,44 +21,44 @@ export type BackgroundImageType = {
 export const App = () => {
 
     const front: BackgroundImageType = {backgroundImage: `url(${frontImg})`}
-    const [indicator, setIndicator] = useState(true)
+    //const [indicator, setIndicator] = useState(true)
 
-    const setIndicatorHandler = () => setIndicator(false)
+    //const setIndicatorHandler = () => setIndicator(false)
 
     return (
-        indicator
-            ? <Preloader callBack={setIndicatorHandler}/>
-            : <div className={s.container}>
-                <header>
-                    <Header/>
-                </header>
-                <div className={s.wrapper}>
-                    <div className={s.frontImg}>
-                        <div className={s.circle}>
-                            <div className={s.backgroundImg} style={front}/>
-                        </div>
-                    </div>
-                    <div>
-                        <Main/>
-                        <Story/>
-                        <Skills/>
-                        <Works/>
-                        <Activities
-                            title={'Experience'}
-                            subTitle={'WORKING WITH'}
-                        />
-                        <Activities
-                            title={'Education'}
-                            subTitle={'STUDIED AT'}
-                        />
-                        <Achievements/>
-                        <Contacts/>
-                        <Footer/>
+        //   indicator
+        //     ? <Preloader callBack={setIndicatorHandler}/>:
+        <div className={s.container}>
+            <header>
+                <Header/>
+            </header>
+            <div className={s.wrapper}>
+                <div className={s.frontImg}>
+                    <div className={s.circle}>
+                        <div className={s.backgroundImg} style={front}/>
                     </div>
                 </div>
-                <footer>
-                    <FooterContacts/>
-                </footer>
+                <div>
+                    <Main/>
+                    <Story/>
+                    <Skills/>
+                    <Works/>
+                    <Activities
+                        title={'Experience'}
+                        subTitle={'WORKING WITH'}
+                    />
+                    <Activities
+                        title={'Education'}
+                        subTitle={'STUDIED AT'}
+                    />
+                    <Achievements/>
+                    <Contacts/>
+                    <Footer/>
+                </div>
             </div>
+            <footer>
+                <FooterContacts/>
+            </footer>
+        </div>
     );
 }
