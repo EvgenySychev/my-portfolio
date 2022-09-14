@@ -6,7 +6,6 @@
   background: $bgColor;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   .image {
     height: 300px;
@@ -17,6 +16,7 @@
     justify-content: center;
     background-size: cover;
     position: relative;
+    transition: 0.5s;
 
     &::before {
       position: absolute;
@@ -29,16 +29,8 @@
       opacity: 0.4;
     }
 
-    .viewBtn {
+    &:hover {
       cursor: pointer;
-      background-color: #99d0fb;
-      padding: 10px 20px;
-      position: relative;
-      z-index: 1;
-
-      &:hover {
-        background: $primaryColor;
-      }
     }
   }
 

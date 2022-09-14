@@ -8,16 +8,13 @@ export type WorkType = {
     linkToWork: string
 }
 
-export function Work({linkToWork, style, description,title}: WorkType) {
+export function Work({linkToWork, style, description, title}: WorkType) {
     return (
         <div className={s.work}>
-            <div className={s.image} style={style}>
-                <a href={linkToWork}>
-                    <button className={s.viewBtn}>
-                        Смотреть
-                    </button>
-                </a>
-            </div>
+
+            <a href={linkToWork}>
+                <div className={s.image} style={style}/>
+            </a>
             <div className={s.projectInfo}>
                 <h3 className={s.header}> {title} </h3>
                 <span className={s.description}> {description} </span>
