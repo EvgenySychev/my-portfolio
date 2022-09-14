@@ -32,6 +32,39 @@
     &:hover {
       cursor: pointer;
     }
+
+    .socials {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        @include text($fontMain, 12px, $textColor);
+        cursor: pointer;
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        height: 54px;
+        line-height: 54px;
+        border-radius: 54px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        border: 1px solid $borderColor;
+        text-decoration: none;
+        width: 54px;
+
+        &:hover {
+          border: 1px solid $primaryColor;
+          span {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+
   }
 
   .projectInfo {
