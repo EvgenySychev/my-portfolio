@@ -28,7 +28,7 @@
     width: 54px;
 
     a {
-      @include text($fontMain, 12px, $textColor);
+      @include text($fontMain, 11px, $textColor);
       cursor: pointer;
       position: relative;
       display: block;
