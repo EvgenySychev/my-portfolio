@@ -2,7 +2,7 @@
 @import '../../common/styles/sass/mixins';
 
 .skillsBlock {
-  min-height: 90vh;
+  height: auto;
   background-color: $bgColor;
   border-top: 1px solid $borderColor;
   .skillsContainer {

@@ -2,7 +2,7 @@
 @import '../../common/styles/sass/mixins';
 
 .storyBlock {
-  min-height: 90vh;
+  height: auto;
   background: $bgColor;
   border-top: 1px solid #585d65;
   .storyContainer {
