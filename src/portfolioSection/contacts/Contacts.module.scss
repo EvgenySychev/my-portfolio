@@ -13,20 +13,26 @@
 
     .contactFormBlock {
       height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .contactForm {
-        width: 70%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
+        width: 70%;
+        margin: 100px auto 150px;
 
-        justify-content: space-evenly;
+
+        /*height: 100%;
+        justify-content: space-evenly;*/
 
         .inputBlock {
-          width: 70%;
-          height: 30px;
+          width: 100%;
+          height: 40px;
+          margin-bottom: 24px;
+          padding: 5px 10px;
         }
 
         .errorMessage {
