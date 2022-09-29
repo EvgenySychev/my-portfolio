@@ -7,7 +7,28 @@
   padding: 4.2vw;
   line-height: 1.4;
   font-weight: 800;
-  background: #373b40;
+  background: $bgColor;
   word-break: break-word;
   border-radius: 264px;
+}
+
+@media screen and(max-width: 992px) {
+  .titleName {
+    margin: 0 auto;
+    margin-top: -200px;
+    padding: 70px 35px 30px 35px;
+    width: 480px;
+    font-size: 60px;
+    background: $bgColor;
+    border-radius: 360px 360px 0 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .titleName {
+    margin-top: -140px;
+    padding: 70px 15px 15px 15px;
+    width: auto;
+    font-size: 40px;
+  }
 }
