@@ -13,18 +13,19 @@ export const Story = () => {
                 </div>
                 <div className={style.descriptionBlock}>
                     <div className={style.description}>
-                        <p> Занимаюсь Frontend-разработкой пользовательских интерфейсов с помощью JavaScript-библиотек
-                            React и Redux. Хорошо знаком со строго типизированным языком программирования TypeScript.
-                            Сейчас изучаю набор инструментов для эффективной разработки Redux Toolkit. Планирую
-                            развиваться и обучаться новым технологиям во Frontend разработке (ReactNative) и Backend
-                            разработке (NodeJS). Развиваю свой английский. Занимаю активную жизненную позицию.
+                        <p>
+                            Я фронтенд-разработчик с опытом создания SPA с использованием React, Redux, TypeScript.
+                            Обладаю знаниями в области пользовательских интерфейсов, процессов тестирования и отладки. Я
+                            совершенствую свои навыки в этом направлении и планирую расширить их с помощью новых
+                            технологий, таких как React Native. В свободное время люблю решать задачи на CodeWars и
+                            занимаюсь улучшением моего английского.
                         </p>
                         <p>
-                            I am engaged in Frontend development of user interfaces using React and Redux JavaScript
-                            libraries. I am well familiar with the strongly typed TypeScript programming language. Now I
-                            am studying a set of tools for effective development of the Redux Toolkit. I plan to develop
-                            and learn new technologies in Frontend development (ReactNative) and Backend development
-                            (Node JS). I'm developing my English. I take an active life position
+                            I am a frontend developer with experience in creating a SPA using React, Redux, TypeScript.
+                            I have knowledge in the field of user interfaces, testing and debugging processes. I am
+                            improving my skills in this direction and plan to expand them with the help of new
+                            technologies, such as React Native. In my free time, I like to visit CodeWars, as well as
+                            improve my English.
                         </p>
                     </div>
                 </div>
