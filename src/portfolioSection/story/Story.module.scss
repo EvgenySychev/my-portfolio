@@ -4,7 +4,7 @@
 .storyBlock {
   height: auto;
   background: $bgColor;
-  border-top: 1px solid #585d65;
+  border-top: 1px solid $borderColor;
   .storyContainer {
     flex-direction: column;
     justify-content: flex-start;
