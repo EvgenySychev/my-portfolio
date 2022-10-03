@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.76d7fdcf.css",
-    "main.js": "/my-portfolio/static/js/main.2c691a00.js",
+    "main.js": "/my-portfolio/static/js/main.97d190cd.js",
     "static/js/787.aeca62f9.chunk.js": "/my-portfolio/static/js/787.aeca62f9.chunk.js",
     "static/media/cs_networking.jpg": "/my-portfolio/static/media/cs_networking.e3d0ee8c51454bad8513.jpg",
     "static/media/counter.png": "/my-portfolio/static/media/counter.6ed3bbe604fa61927364.png",
     "static/media/html.webp": "/my-portfolio/static/media/html.a6a2483685005462e035.webp",
-    "static/media/Resume_Evgeny_Sychev_Frontend-developer.pdf": "/my-portfolio/static/media/Resume_Evgeny_Sychev_Frontend-developer.b80d4144f22e017959bf.pdf",
+    "static/media/Resume_Evgeny_Sychev_Frontend-developer.pdf": "/my-portfolio/static/media/Resume_Evgeny_Sychev_Frontend-developer.07a76d3b01e16ef6d9b6.pdf",
     "static/media/SychFull.jpg": "/my-portfolio/static/media/SychFull.de95c2cc7b879e392aa8.jpg",
     "static/media/tdd.webp": "/my-portfolio/static/media/tdd.9a0cc0715cbf58941dc8.webp",
     "static/media/react.jpg": "/my-portfolio/static/media/react.acd8fb71082299f1f598.jpg",
@@ -22,11 +22,11 @@
     "static/media/restapi.webp": "/my-portfolio/static/media/restapi.f5e12c08ee644fdcf7f1.webp",
     "index.html": "/my-portfolio/index.html",
     "main.76d7fdcf.css.map": "/my-portfolio/static/css/main.76d7fdcf.css.map",
-    "main.2c691a00.js.map": "/my-portfolio/static/js/main.2c691a00.js.map",
+    "main.97d190cd.js.map": "/my-portfolio/static/js/main.97d190cd.js.map",
     "787.aeca62f9.chunk.js.map": "/my-portfolio/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76d7fdcf.css",
-    "static/js/main.2c691a00.js"
+    "static/js/main.97d190cd.js"
   ]
 }
