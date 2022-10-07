@@ -7,8 +7,6 @@ import todoListImg from './../../assets/image/Todolist.jpeg'
 import counterImg from './../../assets/image/counter.png'
 import cardsImg from './../../assets/image/cards.jpg'
 import {BackgroundImageType} from "../../App";
-// @ts-ignore
-import Tilt from 'react-tilt'
 
 type workItemType = {
     title: string
