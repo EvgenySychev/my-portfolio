@@ -25,7 +25,17 @@ export const Works = () => {
             worksImg: {backgroundImage: `url(${todoListImg})`},
             linkToWork: 'https://EvgenySychev.github.io/TO-DO_LIST',
             linkToGit: 'https://github.com/EvgenySychev/TO-DO_LIST',
-            description: 'Проект написан с использованием функциональных компонент. Так же использовалась библиотека Material UI. Разработка приложения через тестирование TDD. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Разработка формы логинизации, валидация форм с помощью Formik. Обработка ошибок запросов на сервер'
+            description: 'В приложении реализована логика классического Тудулиста. Пользователь имеет возможность добавления, редактирования и удаления задач. Разработана форма логинизации. Реализована обработка ошибок запросов на сервер. Проект написан с использованием функциональных компонент. Так же использовалась библиотека Material UI. Разработка приложения через TDD. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Валидация форм с помощью Formik. '
+        },
+        {
+            title: 'Cards',
+            worksImg: {backgroundImage: `url(${cardsImg})`},
+            linkToWork: 'https://alexnewhere.github.io/friday-project/',
+            linkToGit: 'https://github.com/EvgenySychev',
+            description: "В разработке, обновляется. Командный проект. Приложение позволяет реализовать процесс самообучения по карточкам на интересующую Вас тему. Реализована возможность создавать, редактировать и удалять колоды карточек с вопросами и ответами. Реализованы формы регистрации, логонизации и восстановления пароля. Проект написан с использованием функциональных компонент. Первый опыт работы с Redux Toolkit. Использовалась библиотека Material UI. Валидация форм с помощью Formik. Работа с таблицами, а именно реализована сортировка, поиск по ключевым словам, фильтрация. Модальные окна. Axios, redux-thunk. " +
+                "Для начала работы используйте " +
+                "login: 'samara808@yandex.ru', " +
+                "password: '123456789' "
         },
         {
             title: 'Social network',
@@ -33,13 +43,6 @@ export const Works = () => {
             linkToWork: 'https://EvgenySychev.github.io/react-way-of-samurai',
             linkToGit: 'https://github.com/EvgenySychev/react-way-of-samurai',
             description: 'В разработке, обновляется. Проект написан с использованием функциональных и классовых компонент. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Работа с формами с помощью Formik. HOC, compose, redux-thunk'
-        },
-        {
-            title: 'Cards',
-            worksImg: {backgroundImage: `url(${cardsImg})`},
-            linkToWork: '',
-            linkToGit: '',
-            description: 'В разработке'
         },
         {
             title: 'Counter',
@@ -58,13 +61,13 @@ export const Works = () => {
                 <div className={style.works}>
                     {workItems
                         .map(t => (
-                                <Work
-                                    style={t.worksImg}
-                                    title={t.title}
-                                    description={t.description}
-                                    linkToWork={t.linkToWork}
-                                    linkToGit={t.linkToGit}
-                                />
+                            <Work
+                                style={t.worksImg}
+                                title={t.title}
+                                description={t.description}
+                                linkToWork={t.linkToWork}
+                                linkToGit={t.linkToGit}
+                            />
                         ))
                     }
                 </div>

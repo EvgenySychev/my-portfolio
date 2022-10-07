@@ -17,10 +17,10 @@ export function Work({linkToWork, style, description, title, linkToGit}: WorkTyp
                 <Tilt className="Tilt" options={{max: 15, scale:1}}>
                     <div className={s.image} style={style}>
                         <div className={s.socials}>
-                            <a href={linkToWork}>
+                            <a href={linkToWork} target="_blank">
                                 <span>открыть</span>
                             </a>
-                            <a href={linkToGit}>
+                            <a href={linkToGit} target="_blank">
                                 <span>GitHub</span>
                             </a>
                         </div>
