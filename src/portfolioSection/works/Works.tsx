@@ -21,13 +21,7 @@ type workItemType = {
 export const Works = () => {
 
     const workItems: workItemType[] = [
-        {
-            title: 'Counter',
-            worksImg: {backgroundImage: `url(${counterImg})`},
-            linkToWork: 'https://EvgenySychev.github.io/counter',
-            linkToGit: 'https://github.com/EvgenySychev/counter',
-            description: 'Мой первый проект на React. Использовал функциональные компоненты. Сделал верстку. Реализовал логику работы приложения. Работа с Localstorage. Для эффективного хранения данных приложения использовал библиотеку Redux'
-        },
+
         {
             title: 'Todolist',
             worksImg: {backgroundImage: `url(${todoListImg})`},
@@ -38,9 +32,9 @@ export const Works = () => {
         {
             title: 'Social network',
             worksImg: {backgroundImage: `url(${socialImg})`},
-            linkToWork: '',
-            linkToGit: '',
-            description: 'В разработке'
+            linkToWork: 'https://EvgenySychev.github.io/react-way-of-samurai',
+            linkToGit: 'https://github.com/EvgenySychev/react-way-of-samurai',
+            description: 'В разработке, обновляется. Проект написан с использованием функциональных и классовых компонент. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Работа с формами с помощью Formik. HOC, compose, redux-thunk'
         },
         {
             title: 'Cards',
@@ -48,7 +42,14 @@ export const Works = () => {
             linkToWork: '',
             linkToGit: '',
             description: 'В разработке'
-        }
+        },
+        {
+            title: 'Counter',
+            worksImg: {backgroundImage: `url(${counterImg})`},
+            linkToWork: 'https://EvgenySychev.github.io/counter',
+            linkToGit: 'https://github.com/EvgenySychev/counter',
+            description: 'Мой первый проект на React. Использовал функциональные компоненты. Сделал верстку. Реализовал логику работы приложения. Работа с Localstorage. Для эффективного хранения данных приложения использовал библиотеку Redux'
+        },
     ]
 
     return (
