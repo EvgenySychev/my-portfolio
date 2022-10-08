@@ -16,9 +16,9 @@ export const Activities = ({title,subTitle}: ActivitiesType) => {
                        subTitle={subTitle}/>
                 <div className={style.carousel}>
                     <ActivityBlock title={title}/>
-                    <div >
-                        <NavigateBtn/>
-                    </div>
+                    {/*<div >*/}
+                    {/*    <NavigateBtn/>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
