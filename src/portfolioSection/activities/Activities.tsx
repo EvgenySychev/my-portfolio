@@ -1,7 +1,7 @@
-import {Title} from "../../common/Components/title/Title";
+import {Title} from "../../common/components/title/Title";
 import style from "./Activities.module.scss";
-import {NavigateBtn} from "../../common/Components/navigateBtn/NavigateBtn";
-import {ActivityBlock} from "../../common/Components/activity/ActivityBlock";
+import {NavigateBtn} from "../../common/components/navigateBtn/NavigateBtn";
+import {ActivityBlock} from "../../common/components/activity/ActivityBlock";
 
 export type ActivitiesType = {
     title: string

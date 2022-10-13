@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Achievements.module.scss'
-import {Title} from "../../common/Components/title/Title";
+import {Title} from "../../common/components/title/Title";
 import {Achievement} from "./achievement/Achievement";
 import TypingEffect from "new-react-typing-effect";
 

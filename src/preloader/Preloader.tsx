@@ -2,7 +2,7 @@ import React from "react";
 import preloaderGif from "../assets/gif/preloader small.gif";
 import style from "./Preloader.module.scss"
 import {Particle} from "../particle/Particle";
-import {AnimatedButton} from "../common/Components/animatedButton/AnimatedButton";
+import {AnimatedButton} from "../common/components/animatedButton/AnimatedButton";
 
 type PreloaderPropsType = {
     callBack: () => void

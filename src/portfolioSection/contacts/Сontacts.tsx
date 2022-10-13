@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Contacts.module.scss';
-import {Title} from "../../common/Components/title/Title";
-import {AnimatedButton} from "../../common/Components/animatedButton/AnimatedButton";
+import {Title} from "../../common/components/title/Title";
+import {AnimatedButton} from "../../common/components/animatedButton/AnimatedButton";
 import {useFormik} from "formik";
 import * as emailjs from 'emailjs-com';
 
