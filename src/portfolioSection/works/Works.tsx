@@ -44,13 +44,13 @@ export const Works = () => {
             linkToGit: 'https://github.com/EvgenySychev/react-way-of-samurai',
             description: 'В разработке, обновляется. Проект написан с использованием функциональных и классовых компонент. Хранение состояние приложения с помощью Redux. Запросы на сервер с помощью библиотеки Axios. Работа с формами с помощью Formik. HOC, compose, redux-thunk'
         },
-        {
-            title: 'Counter',
-            worksImg: {backgroundImage: `url(${counterImg})`},
-            linkToWork: 'https://EvgenySychev.github.io/counter',
-            linkToGit: 'https://github.com/EvgenySychev/counter',
-            description: 'Мой первый проект на React. Использовал функциональные компоненты. Сделал верстку. Реализовал логику работы приложения. Работа с Localstorage. Для эффективного хранения данных приложения использовал библиотеку Redux'
-        },
+        // {
+        //     title: 'Counter',
+        //     worksImg: {backgroundImage: `url(${counterImg})`},
+        //     linkToWork: 'https://EvgenySychev.github.io/counter',
+        //     linkToGit: 'https://github.com/EvgenySychev/counter',
+        //     description: 'Мой первый проект на React. Использовал функциональные компоненты. Сделал верстку. Реализовал логику работы приложения. Работа с Localstorage. Для эффективного хранения данных приложения использовал библиотеку Redux'
+        // },
     ]
 
     return (
