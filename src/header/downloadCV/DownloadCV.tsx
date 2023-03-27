@@ -1,7 +1,7 @@
 import style from "./DownloadCV.module.scss"
 
 // @ts-ignore
-import myPDF from "../../assets/pdf/Resume_Evgeny_Sychev_Frontend-developer.pdf"
+import myPDF from "../../assets/pdf/Resume_Evgeny_Sychev_Frontend-developer_2023.pdf"
 
 export const DownloadCV = () => {
 
