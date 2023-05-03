@@ -6,10 +6,10 @@ export const FooterContacts = () => {
     return (
         <div className={s.footer}>
             <div className={s.socials}>
-                <a href={'https://t.me/easychev'}>
+                <a target="_blank" href={'https://t.me/easychev'}>
                     <span>Telegram</span>
                 </a>
-                <a href={'https://github.com/EvgenySychev'}>
+                <a target="_blank" href={'https://github.com/EvgenySychev'}>
                     <span>GitHub</span>
                 </a>
             </div>
