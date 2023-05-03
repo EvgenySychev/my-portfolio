@@ -5,7 +5,7 @@ import {Skills} from "./portfolioSection/skills/Skills";
 import {Works} from "./portfolioSection/works/Works";
 import {Contacts} from "./portfolioSection/contacts/Сontacts";
 import {Footer} from "./portfolioSection/footer/Footer";
-import frontImg from './assets/image/SychFull.jpg'
+import frontImg from './assets/image/firstFoto.jpg'
 import s from './App.module.scss'
 import {FooterContacts} from "./footerContacts/FooterContacts";
 import {Story} from "./portfolioSection/story/Story";
