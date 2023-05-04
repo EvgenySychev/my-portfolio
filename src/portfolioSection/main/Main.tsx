@@ -15,7 +15,7 @@ export const Main = () => {
                 />
                 <div className={style.startedContent}>
                     <TypingEffect
-                        messages={["Frontend Developer"]}
+                        messages={["Frontend Developer","Фронтенд разработчик "]}
                         cursor="|"
                         textRenderer={(text, renderedCursor) => {
                             return <p>{text}{renderedCursor}</p>
