@@ -6,6 +6,7 @@ import {AnimatedButton} from "../../common/components/animatedButton/AnimatedBut
 import {TitleName} from "./titleName/TitleName";
 
 export const Main = () => {
+    console.log("MAIN")
     return (
         <div id={'main'} className={style.mainBlock}>
             <div className={style.text}>
