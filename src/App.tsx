@@ -5,13 +5,15 @@ import {Skills} from "./portfolioSection/skills/Skills";
 import {Works} from "./portfolioSection/works/Works";
 import {Contacts} from "./portfolioSection/contacts/Сontacts";
 import {Footer} from "./portfolioSection/footer/Footer";
-import frontImg from './assets/image/firstFoto.jpg'
+import frontImg1 from './assets/image/firstFoto.jpg'
+import frontImg2 from './assets/image/secondFoto.jpg'
+import frontImg3 from './assets/image/SychFull.jpg'
 import s from './App.module.scss'
 import {FooterContacts} from "./footerContacts/FooterContacts";
 import {Story} from "./portfolioSection/story/Story";
 import {Activities} from "./portfolioSection/activities/Activities";
 import {Achievements} from "./portfolioSection/achivments/Achievements";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Preloader} from "./preloader/Preloader";
 
 export type BackgroundImageType = {
@@ -20,7 +22,17 @@ export type BackgroundImageType = {
 
 export const App = () => {
 
-    const front: BackgroundImageType = {backgroundImage: `url(${frontImg})`}
+    const arrImg = [frontImg1,frontImg2,frontImg3]
+    const [counter,setCounter] = useState(0)
+
+    useEffect(()=>{
+        setInterval(()=>{
+            setCounter(state => state+1)
+        }, 2000)
+    },[])
+
+    // const front: BackgroundImageType = {backgroundImage: `url(${frontImg})`}
+
     //const [indicator, setIndicator] = useState(true)
 
     //const setIndicatorHandler = () => setIndicator(false)
@@ -35,7 +47,7 @@ export const App = () => {
             <div className={s.wrapper}>
                 <div className={s.frontImg}>
                     <div className={s.circle}>
-                        <div className={s.backgroundImg} style={front}/>
+                        <div className={s.backgroundImg} style={{backgroundImage: `url(${arrImg[counter]})`}}/>
                     </div>
                 </div>
                 <div>
