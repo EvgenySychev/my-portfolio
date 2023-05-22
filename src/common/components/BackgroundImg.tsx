@@ -6,17 +6,33 @@ import {useEffect, useState} from "react";
 
 export const BackgroundImg = () => {
 
-    const arrImg = [frontImg1,frontImg2,frontImg3]
-    const [counter,setCounter] = useState(0)
+    // const arrImg = [frontImg1, frontImg2, frontImg3]
+    const [counter, setCounter] = useState(1)
 
-    console.log("BackgroundImg")
-
-    useEffect(()=>{
-        setInterval(()=>{
+    useEffect(() => {
+        setInterval(() => {
             setCounter((prevIndex) =>
-                prevIndex === arrImg.length - 1 ? 0 : prevIndex + 1)
-        }, 5000)
-    },[])
+                prevIndex === 3 ? 1 : prevIndex + 1)
+        }, 3000)
+    }, [])
 
-    return <div className={s.backgroundImg} style={{backgroundImage: `url(${arrImg[counter]})`}}/>
+    return <div>
+        <div className={s.backgroundImg}
+            style={{
+                backgroundImage: `url(${frontImg1})`,
+                display: counter === 1 ? '' : 'none'
+            }}/>
+        <div className={s.backgroundImg}
+            style={{
+                backgroundImage: `url(${frontImg2})`,
+                display: counter === 2 ? '' : 'none'
+            }}/>
+        <div className={s.backgroundImg}
+            style={{
+                backgroundImage: `url(${frontImg3})`,
+                display: counter === 3 ? '' : 'none'
+            }}/>
+    </div>
 }
+
+//https://medium.com/suyeonme/react-how-to-build-an-image-slider-with-hooks-in-react-decd4a3ab152
